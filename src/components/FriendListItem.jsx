@@ -1,20 +1,17 @@
 import PropTypes from "prop-types";
 
-const FriendListItem = ({ avatar, name, id }) => {
-  return (
-    <li>
-      {friends.map((friend) => {
-        return (
-          <>
-            <img src={avatar} alt="Avatar" width="48" />
-            <p>Friend name</p>
-            <p>Friend status</p>
-            <p key={id}>{name}</p>
-          </>
-        );
-      })}
-    </li>
-  );
+const FriendListItem = ({ avatar, name, isOnline, id }) => {
+  {
+    friends.map((friend) => {
+      return (
+        <li key={id}>
+          <img src={avatar} alt="Avatar" width="48" />
+          <p>{name}</p>
+          <p>{isOnline}</p>
+        </li>
+      );
+    });
+  }
 };
 
 FriendListItem.propTypes = {
