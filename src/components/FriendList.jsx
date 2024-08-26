@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import FriendListItem from "./FriendListItem";
 
-const FriendList = (friends) => {
+const FriendList = () => {
   return (
     <>
       <ul>
