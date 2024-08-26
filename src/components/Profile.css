@@ -1,0 +1,52 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: rgb(240, 240, 240);
+  margin: 0 auto;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+ul {
+  display: flex;
+  background-color: lightgrey;
+  margin: 0 auto;
+  width: 100%;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-top: 1px solid darkgray;
+  width: 100%;
+}
+
+img {
+  width: 120px;
+  border: 1px solid darkgray;
+  background-color: black;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.userName {
+  font-weight: bold;
+}
+
+.userDescr {
+  color: rgb(124, 124, 124);
+}
+
+.userNum {
+  font-weight: bold;
+}

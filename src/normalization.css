@@ -1,0 +1,33 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css");
+
+header,
+footer,
+body,
+span,
+div,
+nav,
+svg,
+img,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  box-sizing: border-box;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
