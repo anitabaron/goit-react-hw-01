@@ -1,8 +1,7 @@
 .cardFriend {
   display: flex;
-  flex-direction: column;
-  width: 100px;
   border: 2px solid black;
   border-radius: 10px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
