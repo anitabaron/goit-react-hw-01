@@ -1,11 +1,15 @@
 import PropTypes from "prop-types";
 
 const FriendListItem = ({ id, avatar, name, isOnline }) => {
+  console.log({ id, avatar, name, isOnline });
+
   return (
-    <li key={id}>
-      <img src={avatar} alt="Avatar" width="48" />
-      <p>{name}</p>
-      <p>{isOnline}</p>
+    <li key={id} className="cardFriend">
+      <img className="imgFriend" src={avatar} alt="Avatar" width="70" />
+      <p className="name">{name}</p>
+      <p style={{ color: isOnline ? "green" : "red" }}>
+        {isOnline ? "Online" : "Offline"}
+      </p>
     </li>
   );
 };
@@ -14,7 +18,7 @@ FriendListItem.propTypes = {
   avatar: PropTypes.string,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.number,
 };
 
 export default FriendListItem;

@@ -1,9 +1,24 @@
-thead {
-  border: 2px solid black;
-  color: white;
-  background-color: black;
+table {
+  border-collapse: collapse;
 }
 
-thead {
+table th {
   border: 2px solid black;
+  color: white;
+  background-color: rgb(53, 53, 53);
+  border: 2px solid black;
+  padding: 8px;
+}
+
+.type {
+  text-transform: capitalize;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
